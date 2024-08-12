@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = 'ap-south-1' // AWS Region where Elastic Beanstalk is deployed
-        S3_BUCKET = 'nodejs-artifact-venkat ' // S3 Bucket name to upload application package
+        S3_BUCKET = 'nodejs-artifact-venkat' // S3 Bucket name to upload application package
         EB_APP_NAME = 'DotNetJenkinsSample' // Elastic Beanstalk application name
         EB_ENV_NAME = 'DotNetJenkinsSample-env' // Elastic Beanstalk environment name
     }
