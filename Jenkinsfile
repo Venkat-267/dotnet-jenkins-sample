@@ -33,7 +33,7 @@ pipeline {
         stage('Package') {
             steps {
                 // Zip the published output
-                sh 'zip -r app.zip ./publish/*'
+                sh 'zip -r app.zip *'
             }
         }
 
