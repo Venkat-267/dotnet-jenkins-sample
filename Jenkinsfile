@@ -9,13 +9,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Check out the code from your SCM
-                git branch: 'master', url: 'https://github.com/your-username/your-dotnet-app.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 // Build the .NET application
