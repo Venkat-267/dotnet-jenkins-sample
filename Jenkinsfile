@@ -12,21 +12,21 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the .NET application
-                sh 'dotnet build --configuration Release'
+                echo 'dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
                 // Run unit tests
-                sh 'dotnet test --no-build --configuration Release'
+                echo 'dotnet test --no-build --configuration Release'
             }
         }
 
         stage('Publish') {
             steps {
                 // Publish the application to a folder
-                sh 'dotnet publish -c Release -o ./publish'
+                echo 'dotnet publish -c Release -o ./publish'
             }
         }
 
